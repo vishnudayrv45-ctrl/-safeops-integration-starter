@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSphere | Your Everyday Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a class="logo" href="#">Shop<span>Sphere</span></a>
+
+            <div class="search-box">
+                <input id="searchInput" type="search"
+                       placeholder="Search products...">
+                <button id="searchButton">Search</button>
+            </div>
+
+            <div class="cart">
+                🛒 Cart <span id="cartCount">0</span>
+            </div>
+        </div>
+
+        <nav class="categories">
+            <a href="#products">All Products</a>
+            <a href="#products">Electronics</a>
+            <a href="#products">Fashion</a>
+            <a href="#products">Home & Living</a>
+        </nav>
+    </header>
+
+    <main id="storefront">
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">DISCOVER YOUR NEXT FAVOURITE</p>
+                <h1>Shopping that feels<br>like you.</h1>
+                <p>
+                    Explore everyday essentials, technology and lifestyle
+                    products, all in one place.
+                </p>
+                <a class="primary-button" href="#products">
+                    Explore Collection →
+                </a>
+            </div>
+
+            <div class="hero-art">
+                <div class="hero-circle"></div>
+                <div class="shopping-bag">S</div>
+                <div class="floating-label">GOOD FINDS ✦</div>
+            </div>
+        </section>
+
+        <section class="section-heading" id="products">
+            <div>
+                <p class="eyebrow">HANDPICKED FOR YOU</p>
+                <h2>Popular Picks</h2>
+            </div>
+            <span id="productCount">6 products</span>
+        </section>
+
+        <section id="productGrid" class="product-grid"></section>
+
+        <p id="noResults" class="no-results hidden">
+            No products found. Try another search.
+        </p>
+
+        <section class="benefits">
+            <div>
+                <span>📦</span>
+                <div>
+                    <strong>Easy Shopping</strong>
+                    <p>A simple shopping experience</p>
+                </div>
+            </div>
+
+            <div>
+                <span>🔒</span>
+                <div>
+                    <strong>Secure Experience</strong>
+                    <p>Designed with care</p>
+                </div>
+            </div>
+
+            <div>
+                <span>💚</span>
+                <div>
+                    <strong>Customer First</strong>
+                    <p>Your experience matters</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a class="logo" href="#">Shop<span>Sphere</span></a>
+        <p>A demonstration storefront monitored by SafeOps.</p>
+        <div id="serviceStatus">Checking service status...</div>
+    </footer>
+
+    <!-- This screen appears when the backend becomes unhealthy. -->
+    <section id="outageScreen" class="outage-screen hidden">
+        <div class="outage-card">
+            <div class="warning-icon">⚠️</div>
+
+            <p class="eyebrow">SHOPSPHERE SERVICE ALERT</p>
+
+            <h1>We'll be back soon.</h1>
+
+            <p>
+                Our shopping service is temporarily unavailable.
+                Our monitoring system is checking the service.
+            </p>
+
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                <span id="outageMessage">Service unavailable</span>
+            </div>
+
+            <p class="outage-note">
+                This page will automatically check for recovery.
+            </p>
+
+            <button id="retryButton" class="primary-button">
+                Check Again
+            </button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
